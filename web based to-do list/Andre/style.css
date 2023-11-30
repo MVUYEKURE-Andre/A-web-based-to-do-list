@@ -1,0 +1,117 @@
+body{/*setting image as our of web page background*/ 
+ background-image:url(image/forest.jpg) ;
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+ font-family: 'Arial', sans-serif;
+ background-color: #f4f4f4;
+ margin: 0;
+ padding: 0;
+}
+
+.container { /* setting measurement for our container*/
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.container h1{ /* determing heading 1 characters*/
+  font-family: sans-serif;
+  margin: 0px;
+  padding: 20px;
+  margin-bottom: 10px; 
+}
+.container h1 img{ /* i have used an image as my choice for symbol*/
+  background-size:cover ;
+  background: no-repeat;
+  min-height: 10px;
+  max-width: 10vh;
+}
+
+input, button {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid black
+  ;
+  border-radius: 5px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.checkbox-container {
+  margin-right: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 8px;
+}
+
+.task.completed span { /* to mark task as completed we have to strike line through it*/
+  text-decoration: line-through;
+}
+
+.task button { /* those buttons responsible for helping as perform specific task*/
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+
+.task.important {
+  background-color: #ffcccb;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 150px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.dropdown-content button {
+  display: block;
+  width: 100%;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 5px 10px;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content button:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover button {
+  background-color: #2980b9;
+}
+

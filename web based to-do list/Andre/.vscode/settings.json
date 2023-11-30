@@ -1,0 +1,5 @@
+{
+    /*setting port of 4000 as our channel  we are going to listen through*/
+    "liveServer.settings.port": 4000
+
+}
